@@ -1,0 +1,7 @@
+.app__newsletter-popup {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
