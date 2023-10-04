@@ -14,7 +14,7 @@ const Newsletter = ({ open,onClose }) => {
   }
 
   return (
-  <div className='app__newsletter'>
+  <div className='app__newsletter' id='newsletter'>
     <div className="app__newsletter-heading">
       <SubHeading title='Newsletter'/>
       <h1 className='headtext__cormorant'>Subscribe to Our Newsletter</h1>

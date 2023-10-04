@@ -1,0 +1,282 @@
+.app__bookATable-navbar {
+    height: 100px;
+    z-index: 10;
+}
+
+.app__bookATable-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.app__bookATable-title p {
+    color: var(--color-black);
+    font-size: 36px;
+}
+
+.app__bookATable-section {
+    margin-left: 3rem;
+    width: 700px;
+    height: 600px;
+    border: 1px solid var(--color-black);
+    border-radius: 10px;
+    background: var(--color-golden);
+}
+
+.app__bookATable-name,
+.app__bookATable-email,
+.app__bookATable-phone {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.app__bookATable-name label, 
+.app__bookATable-email label, 
+.app__bookATable-phone label,
+.app__bookATable-dateTimePeople label {
+    color: var(--color-black);
+} 
+
+.app__bookATable-name input, 
+.app__bookATable-email input, 
+.app__bookATable-phone input {
+    width: 400px;
+    height: 35px;
+    padding: 0.25rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.app__bookATable-dateTimePeople input {
+    width: 100px;
+    height: 35px;
+    padding: 0.25rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.app__bookATable-dateTimePeople {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.app__bookATable-img {
+    margin-right: 3rem;
+}
+
+.app__bookATable-img img {
+    height: 500px;
+    border: 1px solid var(--color-golden);
+    border-radius: 10px;
+}
+
+.app__bookATable-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.app__bookATable-button button:hover {
+    opacity: 0.9;
+}
+
+.app__footer {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: var(--color-black);
+    padding-top: 0;
+}
+
+.app__footer-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5rem;
+    padding: 0 2rem;
+}
+
+.app__footer-links_contact,
+.app__footer-links_logo,
+.app__footer-links_work {
+    flex: 1;
+    margin: 1rem;
+    text-align: center;
+}
+
+.app__footer-links_logo img:first-child {
+    width: 210px;
+    margin-bottom: 0.75rem;
+}
+
+.app__footer-links_work p:nth-child(2n + 1) {
+    margin-bottom: 1rem;
+}
+
+.app__footer-links_icons {
+    margin-top: 0.5rem;
+}
+
+.app__footer-links_icons svg {
+    color: var(--color-white);
+    margin: 0.5rem;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.app__footer-links_icons svg:hover {
+    color: var(--color-golden);
+}
+
+.app__footer-headtext {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-size: 32px;
+    line-height: 41.6px;
+    margin-bottom: 1rem;
+}
+
+.footer__copyright {
+    margin-top: 3rem;
+}
+
+@media screen and (min-width: 2000px) {
+    .app__footer-headtext {
+        font-size: 51px;
+        line-height: 61px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .app__bookATable-img img {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    .app__bookATable-img img {
+        height: 350px;
+    }
+
+    .app__bookATable-section {
+        margin-left: 3rem;
+        width: 550px;
+        height: 700px;
+    }
+
+    .app__bookATable-section label {
+        font-size: 18px;
+    }
+
+    .app__bookATable-name input, 
+    .app__bookATable-email input, 
+    .app__bookATable-phone input {
+        width: 350px;
+    }
+
+    .app__bookATable-dateTimePeople {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .app__bookATable-phone {
+        margin-bottom: 0rem;
+    }
+
+    .app__bookATable-dateTimePeople {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__footer-links {
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .app__bookATable-section {
+        margin-top: 2rem;
+        margin-left: 0rem;
+    }
+    
+    .app__footer-links_contact,
+    .app__footer-links_logo,
+    .app__footer-links_work {
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    .app__bookATable-img {
+        margin-top: 1rem;
+        margin-right: 0rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .app__bookATable-img img {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__footer {
+        padding: 0 0 2rem 0;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    .app__bookATable-section {
+        width: 350px;
+    }
+
+    .app__bookATable-name input, 
+    .app__bookATable-email input, 
+    .app__bookATable-phone input {
+        width: 250px;
+    }
+
+    .app__bookATable-img img {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 351px) {
+    .app__bookATable-section {
+        width: 250px;
+    }
+
+    .app__bookATable-name input, 
+    .app__bookATable-email input, 
+    .app__bookATable-phone input {
+        width: 200px;
+    }
+
+    .app__bookATable-img img {
+        width: 250px;
+        height: 200px;
+    }
+
+    .app__footer-links_logo img:first-child {
+        width: 80%;
+    }
+}

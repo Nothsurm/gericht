@@ -3,8 +3,6 @@ import Newsletter from './Footer/Newsletter';
 import FooterOverlay from './Footer/FooterOverlay';
 import MenuItem from './Menuitem/MenuItem';
 import Navbar from './Navbar/Navbar';
-import Modal from './Modal/Modal';
-import ModalSuccess from './ModalSuccess/ModalSuccess'
 import NewsletterSuccess from './NewsletterSuccess/NewsletterSuccess';
 
 export {
@@ -13,7 +11,5 @@ export {
   FooterOverlay,
   MenuItem,
   Navbar,
-  Modal,
-  ModalSuccess,
   NewsletterSuccess,
 };
