@@ -63,7 +63,7 @@ function BookATable({ open,onClose }) {
                 <label className='p__cormorant' htmlFor="time">Time:</label>
                 <TimePicker label="Basic Time Picker" onChange={onChange} value={value} required/>
                 <label className='p__cormorant' htmlFor="date">No. of People:</label>
-                <select value={data.people} onChange={handleChange}>
+                <select value={value} onChange={e => onChange(e.target.value)}>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
