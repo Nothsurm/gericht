@@ -15,6 +15,7 @@ function BookATable({ open,onClose }) {
   const [data, setData] = useState({ name: "", email: "", phone: "", date: "", time: "", people: ""})
   const [selectedDate, setSelectedDate] = useState(new Date().getTime() + 24 * 60 * 60 * 1000)
   const [value, onChange] = useState('');
+  const [selectedPeople, setselectedPeople] = useState('1');
   const [openModalSuccess, setOpenModalSuccess] = useState(false)
 
   const handleChange = (e) => {
@@ -63,7 +64,7 @@ function BookATable({ open,onClose }) {
                 <label className='p__cormorant' htmlFor="time">Time:</label>
                 <TimePicker label="Basic Time Picker" onChange={onChange} value={value} required/>
                 <label className='p__cormorant' htmlFor="date">No. of People:</label>
-                <select value={value} onChange={e => onChange(e.target.value)}>
+                <select value={selectedPeople} onChange={e => setselectedPeople(e.target.value)}>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
